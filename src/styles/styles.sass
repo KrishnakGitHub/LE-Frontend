@@ -1,0 +1,18 @@
+@use "variables"
+
+:root
+  --bg-color: variables.$light-bg
+  --text-color: variables.$light-text
+  --primary-color: variables.$light-primary
+
+[data-theme="dark"]
+  --bg-color: variables.$dark-bg
+  --text-color: variables.$dark-text
+  --primary-color: variables.$dark-primary
+
+
+body
+  background-color: var(--bg-color)
+  color: var(--text-color)
+  font-family: Arial, sans-serif
+  transition: background 0.3s ease, color 0.3s ease
